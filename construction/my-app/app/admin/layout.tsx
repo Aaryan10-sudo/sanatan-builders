@@ -1,11 +1,19 @@
-import type React from "react"
-import Link from "next/link"
-import { Building2, LayoutDashboard, Package, FileText, Users, Settings, LogOut } from "lucide-react"
+import type React from "react";
+import Link from "next/link";
+import {
+  Building2,
+  LayoutDashboard,
+  Package,
+  FileText,
+  Users,
+  Settings,
+  LogOut,
+} from "lucide-react";
 
 export default function AdminLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <div className="min-h-screen bg-gray-100">
@@ -15,7 +23,7 @@ export default function AdminLayout({
           <div className="p-4 border-b border-gray-800">
             <div className="flex items-center gap-2">
               <Building2 className="h-6 w-6 text-orange-500" />
-              <span className="text-xl font-bold">BuildRight Admin</span>
+              <span className="text-xl font-bold">Sanatan Builders</span>
             </div>
           </div>
           <nav className="flex-1 p-4 space-y-1">
@@ -67,6 +75,5 @@ export default function AdminLayout({
         <main className="flex-1 overflow-auto">{children}</main>
       </div>
     </div>
-  )
+  );
 }
-

@@ -38,7 +38,12 @@ export default function ConstructionHomepage() {
       <header className="sticky top-0 z-40 border-b bg-white text-black">
         <div className="container flex h-16 items-center justify-between py-4">
           <div className="flex items-center gap-2">
-            <img src="logo.png" className="h-[60px]" />
+            <Image
+              src="/logo.png"
+              alt="Sanatan Builders logo"
+              width={60} // Set a sensible width
+              height={60} // Auto scales
+            />
           </div>
 
           <nav className="hidden md:flex items-center gap-6">
@@ -667,8 +672,9 @@ export default function ConstructionHomepage() {
                   Building Excellence Since 1995
                 </h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl">
-                  With over 25 years of experience, we've established ourselves
-                  as leaders in the construction industry.
+                  {
+                    "With over 25 years of experience, we've established ourselves as leaders in the construction industry."
+                  }
                 </p>
               </div>
               <ul className="grid gap-4">
@@ -1012,8 +1018,9 @@ export default function ConstructionHomepage() {
                 <span className="text-orange-500">Project?</span>
               </h2>
               <p className="max-w-[900px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Contact us today for a free consultation and estimate. Let's
-                build something great together.
+                {
+                  "Contact us today for a free consultation and estimate. Let's build something great together"
+                }
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -1202,7 +1209,12 @@ export default function ConstructionHomepage() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <img src="/hlooooo.jpg" className="h-[70px]" />{" "}
+                <Image
+                  src="/hlooooo.jpg"
+                  alt="Sanatan Builders logo"
+                  width={60} // Set a sensible width
+                  height={60} // Auto scales
+                />
                 <span className="text-xl font-bold">Sanatan Builders</span>
               </div>
               <p className="text-gray-400 text-sm mb-4">
